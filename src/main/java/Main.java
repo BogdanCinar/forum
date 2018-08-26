@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     static Scanner sc = null;
-    static String prompt = null;
+    static String prompt = ">";
 
     static MySQLHandler mySQLHandler = null;
 

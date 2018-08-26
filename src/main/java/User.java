@@ -13,9 +13,8 @@ public class User {
         this.mail = mail;
     }
 
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
+    public String getUsername() {
+        return username;
     }
 
     @Override
@@ -36,10 +35,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "username='" + username + '\'' +
-                ", mail='" + mail + '\'' +
-                '}';
+        return username + '\'' +
+                ", mail='" + mail + '\'';
     }
 
     public boolean isThisPasswordMine(String password) {
@@ -49,5 +46,9 @@ public class User {
         else{
             return false;
         }
+    }
+
+    public Integer getId() {
+        return id;
     }
 }

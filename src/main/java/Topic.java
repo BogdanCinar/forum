@@ -8,7 +8,7 @@ public class Topic {
     private String subject;
 
 
-
-
-
+    public String getSubject() {
+        return subject;
+    }
 }
